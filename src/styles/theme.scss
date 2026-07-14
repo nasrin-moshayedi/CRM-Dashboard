@@ -8,24 +8,30 @@
   --text-secondary: #6b7280;
 
   /* Brand */
-  --primary: #6366f1;
+  --primary: #5b5ceb;
 
   /* Border */
-  --border: #e5e7eb;
+  --border: #e2e8f0;
+
+  // Card
+  --card: #ffffff;
 }
 
 [data-theme="dark"] {
   /* Background */
-  --bg: #0f172a;
-  --surface: #1e293b;
+  --bg: #09090b;
+  --surface: #111827;
 
   /* Text */
-  --text: #f8fafc;
-  --text-secondary: #94a3b8;
+  --text: #fafafa;
+  --text-secondary: #a1a1aa;
 
   /* Brand */
-  --primary: #818cf8;
+  --primary: #7c7cff;
 
   /* Border */
-  --border: #334155;
+  --border: #27272a;
+
+  // Card
+  --card: #181818;
 }

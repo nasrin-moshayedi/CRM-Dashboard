@@ -16,25 +16,18 @@ const { t } = useTranslation();
     <>
       <section id="center">
         <div className="hero">
-          <Typography className={"h1"} > hi nasin</Typography>
+          <Typography className={"h1"} > {t("hi-nasrin")}  {t("dashboard")}</Typography>
                     <Typography className={"h2"} > hi h2</Typography>
           <Typography className={"body"} > hi body</Typography>
           <Typography className={"caption"} > hi caption</Typography>
-
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
         <div>
-          <h1>Get started</h1>
+        
           <LanguageSwitcher />
           <Typography>
             <button onClick={toggleTheme}>
       {theme === "light" ? "🌙" : "☀️"}
     </button>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-                   <Typography className={"h1"} > {t("dashboard")}</Typography>
-
           </Typography>
         </div>
         <button
@@ -46,10 +39,10 @@ const { t } = useTranslation();
         </button>
       </section>
 
-      <div className="ticks"></div>
+      {/* <div className="ticks"></div> */}
 
-      <section id="next-steps">
-        <div id="docs">
+      {/* <section id="next-steps"> */}
+        {/* <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
@@ -69,14 +62,14 @@ const { t } = useTranslation();
               </a>
             </li>
           </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
+        </div> */}
+        {/* <div id="social">
+          {/* <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
           <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
+          <p>Join the Vite community</p> */}
+          {/* <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">
                 <svg
@@ -125,12 +118,12 @@ const { t } = useTranslation();
                 Bluesky
               </a>
             </li>
-          </ul>
-        </div>
-      </section>
+          </ul> */}
+        {/* </div>  */}
+      {/* </section> */}
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      {/* <div className="ticks"></div> */}
+      {/* <section id="spacer"></section> */}
     </>
   )
 }

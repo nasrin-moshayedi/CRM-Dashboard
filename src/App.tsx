@@ -6,12 +6,14 @@ import LanguageSwitcher from './components/commen/local'
 import Typography from './components/ui/Typography'
 import Button from './components/ui/Button'
 import Card from './components/ui/card'
+import SideBar from './layouts/sidebar';
 function App() {
   const { theme, toggleTheme } = useTheme();
   const { t } = useTranslation();
 
   return (
-    <>
+    <div className='flex'>
+    <SideBar />
       <section id="center">
         <div className="hero">
           <Typography className={"h1"} > {t("hi-nasrin")}  {t("dashboard")}</Typography>
@@ -34,7 +36,7 @@ function App() {
         </Card>
       </section>
       
-    </>
+    </div>
   )
 }
 

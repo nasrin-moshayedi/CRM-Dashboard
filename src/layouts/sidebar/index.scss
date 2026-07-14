@@ -1,0 +1,26 @@
+@import "./../../styles/variables.scss"; 
+
+.sidebar {
+    height: 100vh;
+    // background: var(--card);
+    border-right: 1px solid var(--border);
+    padding: 24px;
+    list-style: none;
+    text-align: justify;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    li {
+        padding: 10px 0;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+  @media (max-width: $tablet) {
+    .sidebar {
+        transform: translateX(-128px);
+        transition: transform 0.3s ease;
+    }
+  
+}

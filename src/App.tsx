@@ -7,6 +7,7 @@ import { useTheme } from "./theme/ThemeProvider";
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './components/commen/local'
 import Typography from './components/ui/Typography'
+import Button from './components/ui/Button'
 function App() {
   const [count, setCount] = useState(0)
   const { theme, toggleTheme } = useTheme();
@@ -25,18 +26,13 @@ const { t } = useTranslation();
         
           <LanguageSwitcher />
           <Typography>
-            <button onClick={toggleTheme}>
-      {theme === "light" ? "🌙" : "☀️"}
-    </button>
+            <Button onClick={toggleTheme} >
+              {theme === "light" ? "🌙" : "☀️"}
+            </Button>
+            
           </Typography>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+  
       </section>
 
       {/* <div className="ticks"></div> */}

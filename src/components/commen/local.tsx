@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Button from "../ui/Button";
 
 function LanguageSwitcher() {
   const { i18n } = useTranslation();
@@ -14,13 +15,12 @@ const lang = localStorage.getItem("language") || "en";
 
   return (
     <div>
-      <button onClick={() => changeLanguage("en")}>
-        English
-      </button>
-
-      <button onClick={() => changeLanguage("fa")}>
-        فارسی
-      </button>
+      <Button onClick={() => changeLanguage("en")}>
+                English
+      </Button>
+      <Button onClick={() => changeLanguage("fa")}>
+                فارسی
+      </Button>
     </div>
   );
 }

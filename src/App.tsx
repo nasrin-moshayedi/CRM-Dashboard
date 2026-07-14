@@ -6,6 +6,7 @@ import './App.css'
 import { useTheme } from "./theme/ThemeProvider";
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './components/commen/local'
+import Typography from './components/ui/Typography'
 function App() {
   const [count, setCount] = useState(0)
   const { theme, toggleTheme } = useTheme();
@@ -15,6 +16,11 @@ const { t } = useTranslation();
     <>
       <section id="center">
         <div className="hero">
+          <Typography className={"h1"} > hi nasin</Typography>
+                    <Typography className={"h2"} > hi h2</Typography>
+          <Typography className={"body"} > hi body</Typography>
+          <Typography className={"caption"} > hi caption</Typography>
+
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
@@ -22,13 +28,14 @@ const { t } = useTranslation();
         <div>
           <h1>Get started</h1>
           <LanguageSwitcher />
-          <p>
+          <Typography>
             <button onClick={toggleTheme}>
       {theme === "light" ? "🌙" : "☀️"}
     </button>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-         <h1>{t("dashboard")}</h1>
-          </p>
+                   <Typography className={"h1"} > {t("dashboard")}</Typography>
+
+          </Typography>
         </div>
         <button
           type="button"

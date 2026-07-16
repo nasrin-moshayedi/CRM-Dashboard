@@ -16,10 +16,10 @@ const lang = localStorage.getItem("language") || "en";
   return (
     <div>
       <Button onClick={() => changeLanguage("en")}>
-                English
+                en
       </Button>
       <Button onClick={() => changeLanguage("fa")}>
-                فارسی
+                fa
       </Button>
     </div>
   );

@@ -1,0 +1,26 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 32px;
+    .cardTop {
+        padding: 12px;
+        width: 50%;
+        justify-content: left;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        .card {
+            padding: 12px;
+        }
+        button {
+            background: var(--card);
+            border: none;
+            color: var(--text)
+        }
+    }
+}

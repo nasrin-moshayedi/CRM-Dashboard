@@ -9,6 +9,14 @@
     .hamberger-menu {
         display: none;
     }
+    .show {
+       transform: translateX(0px);
+       transition: transform 0.3s ease;
+    }
+    .not-show {
+        transform: translateX(-330%);
+        transition: transform 0.3s ease;
+    }
     .searchInput {
         width: 50%;
         height: 51px;
@@ -31,7 +39,7 @@
 }
  @media (max-width: 1023px) {
    .topbar {
-    padding: 0;
+      padding: 0;
      .hamberger-menu {
        display: flex;
         flex-direction: row-reverse;

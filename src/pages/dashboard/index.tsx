@@ -8,31 +8,36 @@ import "./index.scss"
 import Input from "../../components/ui/Input";
 import { Bell, HelpCircle, Moon, Sun, TextAlignJustify } from 'lucide-react';
 import Avator from "../../components/ui/Avator";
-const Dashboard = () => {
+
+type DashboardProps = {
+  setMenu: React.Dispatch<React.SetStateAction<boolean>>;
+  menu: boolean;
+};
+
+const Dashboard = ({setMenu, menu}: DashboardProps) => {
+    
     const { theme, toggleTheme } = useTheme();
     const { t } = useTranslation();
     const lng = localStorage.getItem("language") || "en";
-    console.log(lng)
     const classCrad = () => {
         if(lng === "fa") {
             return "left"
         } else {
             return "right";
         }
-
     }
+    const showCard = menu ? "not-show" : "show";
+console.log(menu, "show")
     return(
         <>
         <div className="topbar">
-            <div className="hamberger-menu">
-          <Typography className="h1">
-                N.
-            </Typography>
-            <TextAlignJustify />
-          </div>  
-           <Input 
-            className={"searchInput " + classCrad}
-            >
+            <div className={"hamberger-menu " + showCard}>
+                <Typography className="h1">
+                    N.
+                </Typography>
+                <TextAlignJustify onClick={() => setMenu((prev) => !prev)}/>
+            </div>  
+           <Input className={"searchInput " + classCrad}>
                 Search
             </Input>
               
@@ -46,7 +51,6 @@ const Dashboard = () => {
             
             <Card>
                 <Button onClick={toggleTheme} >
-                    
                    {theme === "light" ? <Moon/> : <Sun/>}
                 </Button>  
             </Card>

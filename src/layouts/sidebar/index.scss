@@ -9,6 +9,11 @@
     text-align: justify;
     transform: translateX(0);
     transition: transform 0.3s ease;
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+    }
     li {
         padding: 10px 0;
     }

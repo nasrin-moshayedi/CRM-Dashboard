@@ -3,11 +3,14 @@ import { useTranslation } from 'react-i18next'
 import "./index.scss"
 import Typography from "../../components/ui/Typography";
 import { SidebarClose, X } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const menuItems = [
-    {title: "dashboard"},
-    {title: "customers"},
-    {title: "projects"},
+    {title: "dashboard", link:"/"},
+    {title: "customers", link:"/customers"},
+    {title: "projects", link: "/projects"},
+    {title: "settings", link: "/settings"},
+
 ]
 
 type SideProps = {
@@ -30,11 +33,14 @@ const SideBar = ({menu, setMenu}: SideProps) => {
                 N.
             </Typography>
             </div>
-            {menuItems.map((p, k) => {
+            <div className="flex direction-column gap-16">
+                {menuItems.map((p, k) => {
                 return(
-                    <li key={k}>{t(p.title)}</li>
+                    <NavLink to={p.link} key={k}>{t(p.title)}</NavLink>
                 )
             })}
+            </div>
+            
         </ul>
         </>
     )

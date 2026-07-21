@@ -2,6 +2,7 @@
   "dashboard": "Dashboard",
   "customers": "Customers",
   "orders": "Orders",
-    "hi-nasrin": "hi Nasrin"
+  "projects": "projects",
+  "settings": "settings"
 
 }

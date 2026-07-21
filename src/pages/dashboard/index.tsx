@@ -2,19 +2,13 @@ import Typography from "../../components/ui/Typography";
 import { useTranslation } from 'react-i18next'
 import Card from "../../components/ui/card";
 import "./index.scss"
-import Header from "../../layouts/Header";
 
-type DashboardProps = {
-  setMenu: React.Dispatch<React.SetStateAction<boolean>>;
-  menu: boolean;
-};
 
-const Dashboard = ({setMenu, menu}: DashboardProps) => { 
+const Dashboard = () => { 
     const { t } = useTranslation();
 
     return(
         <>
-        <Header menu={menu} setMenu={setMenu} />
         <div className="flex w-100 gap-16 dahsboad-content">
             <div className="flex w-100 gap-16 direction-column">
                 <div className="flex gap-16 w-100">

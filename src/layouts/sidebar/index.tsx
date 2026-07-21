@@ -19,9 +19,9 @@ const SideBar = () => {
             <Typography className="h1">
                 N.
             </Typography>
-            {menuItems.map((p) => {
+            {menuItems.map((p, k) => {
                 return(
-                    <li>{t(p.title)}</li>
+                    <li key={k}>{t(p.title)}</li>
                 )
             })}
         </ul>

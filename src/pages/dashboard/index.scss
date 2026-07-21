@@ -1,19 +1,24 @@
+// @use "./../../styles/variables.scss";
+
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 32px;
-    .cardTop {
-        padding: 12px;
+    padding: 24px 32px;
+    .hamberger-menu {
+        display: none;
+    }
+    .searchInput {
         width: 50%;
-        justify-content: left;
+        height: 51px;
     }
     div {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 16px;
+        height: 51px;
         .card {
             padding: 12px;
         }
@@ -23,4 +28,17 @@
             color: var(--text)
         }
     }
+}
+ @media (max-width: 1023px) {
+   .topbar {
+    padding: 0;
+     .hamberger-menu {
+       display: flex;
+        flex-direction: row-reverse;
+    }
+    .searchInput {
+        display: none;
+    }
+   }
+  
 }

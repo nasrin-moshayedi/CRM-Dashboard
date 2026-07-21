@@ -15,18 +15,7 @@ const Dashboard = ({setMenu, menu}: DashboardProps) => {
     return(
         <>
         <Header menu={menu} setMenu={setMenu} />
-        <div className="hero">
-          <Typography className={"h1"} > {t("hi-nasrin")}  {t("dashboard")}</Typography>
-          <Typography className={"h2"} > hi h2</Typography>
-          <Typography className={"body"} > hi body</Typography>
-          <Typography className={"caption"} > hi caption</Typography>
-        </div>
-        <div>          
-        </div>
-        <Card >
-          Hi cardS
-        </Card>
-        </>
+       </>
     )
 }
 

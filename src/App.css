@@ -187,3 +187,34 @@
   display: flex;
   justify-content: left;
 }
+.direction-column {
+  flex-direction: column;
+}
+.gap-16 {
+  gap: 16px;
+}
+.w-100 {
+  width: 100%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-45 {
+  width: 54%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-25 {
+  width: 25%;
+}
+
+.grid {
+  display: grid;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}

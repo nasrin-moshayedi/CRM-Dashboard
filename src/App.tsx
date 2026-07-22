@@ -5,6 +5,7 @@ import SideBar from './layouts/sidebar';
 import Dashboard from './pages/dashboard';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './layouts/Header';
+import Customers from './pages/customers';
 
 function App() {
     const [menu, setMenu] = useState(false);
@@ -19,7 +20,7 @@ console.log(menu)
 
             <Routes>
                 <Route path="/" element={<Dashboard />} />
-                <Route path="/ap" element={<Dashboard />} />   
+                <Route path="/customers" element={<Customers />} />   
             </Routes>
            
 
